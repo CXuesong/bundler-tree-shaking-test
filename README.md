@@ -1,0 +1,1 @@
+# bundler-tree-shaking-test

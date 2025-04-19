@@ -1,0 +1,6 @@
+{
+  "name": "bundler-tree-shaking-test",
+  "type": "module",
+  "sideEffects": false,
+  "packageManager": "yarn@4.9.1"
+}

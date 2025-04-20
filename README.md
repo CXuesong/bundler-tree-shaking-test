@@ -16,9 +16,27 @@ console.log(new Containers.Map());
 
 ## Test result
 
+See `/specimens/` folder.
+
 | Bundler   | Version   | `import =`   | `import {}` |
 | --------- | --------- | ------------ | ----------- |
 | webpack   | 5.99.6    | Not shakable | Shakable    |
 | rollup    | 4.40.0    | Not shakable | Shakable    |
 | vite      | 6.3.2     | Not shakable | Shakable    |
 | esbuild   | 0.25.2    | Not shakable | Shakable    |
+
+## Conclusion
+
+To make the package tree-shakable, we should avoid asking users to alias the sub-modules like this
+
+```typescript
+import Linq1 = MyLib.Linq;
+// equals to
+const Linq1 = MyLib.Linq;
+```
+
+However, the sub-module imported with the following `import` syntax is still tree-shakable.
+
+```typescript
+import { Linq as Linq2 } from "./MyLib";
+```

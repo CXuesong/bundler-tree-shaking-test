@@ -17,10 +17,8 @@
         "ESNext"
       ],
       "sourceMap": true,
-      "declaration": true,
-      "declarationMap": true,
       "stripInternal": true,
-      "outDir": "../lib",
+      "outDir": "../dist",
       "importHelpers": true,
       "baseUrl": "../",
     },

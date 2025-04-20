@@ -2,5 +2,25 @@
   "name": "bundler-tree-shaking-test",
   "type": "module",
   "sideEffects": false,
-  "packageManager": "yarn@4.9.1"
+  "packageManager": "yarn@4.9.1",
+  "scripts": {
+    "build": "pwsh -File ./scripts/build.ps1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^12.1.2",
+    "@types/node": "^22.14.1",
+    "esbuild": "^0.25.2",
+    "js-beautify": "^1.15.4",
+    "rollup": "^4.40.0",
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.2",
+    "vite-plugin-checker": "^0.9.1",
+    "vite-tsconfig-paths": "^5.1.4",
+    "webpack": "^5.99.6",
+    "webpack-cli": "^6.0.1"
+  },
+  "dependencies": {
+    "tslib": "^2.8.1"
+  }
 }
